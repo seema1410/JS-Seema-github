@@ -1,0 +1,50 @@
+// primitive
+// 7 types = string number , boolean , null , undefined , symbol , bigint
+
+const score = 22
+const scoreValue = 22.4
+const scoreBoolean = true
+const outsideTemp = null
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+//console.log(id === anotherId);
+
+//Refrence type - non primitive 
+//memeory me allcation direct mill jata h 
+
+// - array , object , function 
+
+const hero = ["thor" , "spiderman" , "hulk"]
+let obj = {
+    name:"seema",
+    age:22
+}
+
+const myFunction = function(){
+    console.log("hii hw are you");
+}
+
+// java script is a dynamically typed language
+
+
+
+// stack(primitive) and heap(non-primitive) memory allocation
+
+let name = "seema"
+let anothername = name
+anothername = "reema"
+console.log(name);
+console.log(anothername);
+// name is not changed because it is stored in stack memory and anothername is a copy of name
+let user = {
+    name : "seema", 
+    age : 22 
+}
+let anotherUser = user
+anotherUser.name = "reema" 
+anotherUser.age = 23
+console.log(user);
+console.log(anotherUser);
+// user is changed because it is stored in heap memory and anotherUser is a reference to user
