@@ -1,0 +1,16 @@
+//with normal function 
+
+const myarr= [1, 2, 3, 4, ,5 ,6, 7, 8, 9]
+
+const ans = myarr.reduce(function(acc,curval){
+    //console.log(`acc val is ${acc} and the curr value is ${curval}`)
+    return acc+curval;
+
+},0)
+
+//console.log(ans)
+
+//arrow finction
+
+const answer = myarr.reduce((acc,curval) =>acc+curval,0)
+console.log(answer)
